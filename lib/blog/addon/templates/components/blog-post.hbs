@@ -10,3 +10,13 @@
   <button {{action onPrivateTransitionRoute "cookbook"}}>Private Transition To (routeName)</button>
   <button {{action onPrivateTransitionUrl "/cookbook"}}>Private Transition To (URL)</button>
 </div>
+<div>
+  <button {{action "handleWithUrlRouter" "/cookbook"}}>
+    App Level URL Router Service (URL)
+  </button>
+</div>
+<div>
+  <button {{action "handleWithPublicRouter" "/cookbook"}}>
+    App Level Public Router Service (URL)
+  </button>
+</div>

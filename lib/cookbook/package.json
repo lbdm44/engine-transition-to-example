@@ -6,6 +6,7 @@
   ],
   "dependencies": {
     "ember-route-action-helper": "*",
+    "ember-router-service-polyfill": "*",
     "ember-cli-htmlbars": "*",
     "ember-cli-babel": "*"
   }

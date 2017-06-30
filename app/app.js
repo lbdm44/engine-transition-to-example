@@ -19,7 +19,9 @@ App = Ember.Application.extend({
           'cookbook.recipe': 'cookbook.recipe',
         },
         services: [
+          'router',
           'store',
+          'urlRouter',
         ],
       }
     },
@@ -30,7 +32,9 @@ App = Ember.Application.extend({
           'blog.post': 'blog.post',
         },
         services: [
+          'router',
           'store',
+          'urlRouter',
         ],
       },
     },

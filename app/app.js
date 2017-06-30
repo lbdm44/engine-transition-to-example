@@ -10,7 +10,31 @@ Ember.MODEL_FACTORY_INJECTIONS = true;
 App = Ember.Application.extend({
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
-  Resolver
+  Resolver,
+  engines: {
+    blog: {
+      dependencies: {
+        externalRoutes: {
+          cookbook: 'cookbook',
+          'cookbook.recipe': 'cookbook.recipe',
+        },
+        services: [
+          'store',
+        ],
+      }
+    },
+    cookbook: {
+      dependencies: {
+        externalRoutes: {
+          blog: 'blog',
+          'blog.post': 'blog.post',
+        },
+        services: [
+          'store',
+        ],
+      },
+    },
+  },
 });
 
 loadInitializers(App, config.modulePrefix);

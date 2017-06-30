@@ -1,5 +1,6 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
+<ul class="nav-bar">
+  <li>{{link-to "Home" "application"}}</li>
+  <li>{{link-to "Blog" "blog"}}</li>
+  <li>{{link-to "Cookbook" "cookbook"}}</li>
+</ul>
 {{outlet}}

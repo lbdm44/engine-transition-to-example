@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.mount('blog');
+  this.mount('cookbook');
 });
 
 export default Router;

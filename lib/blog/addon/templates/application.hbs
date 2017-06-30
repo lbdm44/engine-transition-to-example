@@ -3,4 +3,13 @@
 {{!-- {{link-to "Link To Cookbook" "cookbook"}} --}}
 {{link-to-external "Link To External Cookbook" "cookbook"}}
 
+{{blog-post
+  onTransitionToRoute=(route-action "handleTransitionToRoute")
+  onTransitionToUrl=(route-action "handleTransitionToUrl")
+  onTransitionToExternalRoute=(route-action "handleTransitionToExternalRoute")
+  onTransitionToExternalUrl=(route-action "handleTransitionToExternalUrl")
+  onPrivateTransitionRoute=(route-action "handlePrivateTransitionRoute")
+  onPrivateTransitionUrl=(route-action "handlePrivateTransitionUrl")
+}}
+
 {{outlet}}
